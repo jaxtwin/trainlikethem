@@ -41,7 +41,7 @@ export const programs = [
 
 export const details = {
   "David Goggins — volume base": {
-    img: "photos/p1786959798053-0.webp",
+    img: "p1786959798053-0.webp",
     alt: "David Goggins mid-run in a black training top, shot from the side",
     credit: "",
     imgPos: "26% 42%",
@@ -84,7 +84,7 @@ export const details = {
     ]
   },
   "Dwayne Johnson — off-season week": {
-    img: "photos/p1786959372536-0.webp",
+    img: "p1786959372536-0.webp",
     alt: "Dwayne Johnson training in a gym, arms flexed at the top of a curl",
     credit: "",
     imgPos: "50% 24%",
@@ -129,7 +129,7 @@ export const details = {
     ]
   },
       "Chris Hemsworth — Thor mass block": {
-        img: "photos/p1786957875632-0.webp",
+        img: "p1786957875632-0.webp",
         alt: "Chris Hemsworth in a gym, shoulders and arms visible mid-set",
         credit: "",
         kicker: "Push / pull / legs · role prep",
@@ -172,7 +172,7 @@ export const details = {
         ]
       },
       "Hugh Jackman — Wolverine strength": {
-        img: "photos/p1786957956628-0.webp",
+        img: "p1786957956628-0.webp",
         alt: "Hugh Jackman in a training vest, upper body braced under load",
         credit: "",
         kicker: "Upper / lower · role prep",
@@ -215,7 +215,7 @@ export const details = {
         ]
       },
       "Arnold Schwarzenegger — golden era": {
-        img: "photos/p1786958112867-0.webp",
+        img: "p1786958112867-0.webp",
         alt: "Arnold Schwarzenegger posing in a 1970s gym, back and arms fully contracted",
         credit: "",
         kicker: "Bro split · golden era",
