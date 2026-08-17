@@ -4,26 +4,29 @@ Documented training splits and diets from actors, athletes, bodybuilders and eve
 
 ## Deploying
 
-Netlify serves this repo as-is. In Netlify: **Add new site → Import an existing project → GitHub → trainlikethem**. Leave the build command empty and set the publish directory to the repo root. Every push to `main` redeploys.
+Netlify serves this repo as-is: no build command, publish directory `.`. Every push to `main` redeploys.
 
 ## What's in here
 
 | File | What it is |
 | --- | --- |
-| `index.html` | The whole site — all pages, all data, all photos inlined. 1.2 MB, self-contained. |
-| `netlify.toml` | Deploy config. Publishes the repo root, no build step. |
+| `index.html` | The whole site — every page, hash-routed. Real `<head>` metadata for crawlers. |
+| `programs.js` | All program data: the 35 listings, five full write-ups, progression rules, meals. |
+| `support.js` | Rendering runtime. Generated — do not edit. |
+| `photos/` | Profile photos, 1400px WebP. |
+| `netlify.toml` | Deploy config. |
 
-`index.html` is generated, not hand-edited. It is compiled from the design source (`TrainLikeThem.dc.html` + `programs.js`), with the five profile photos downscaled to 1400px JPEG and embedded as data URLs.
+Edit content in `programs.js`. Edit layout and copy in `index.html`.
 
 ## Before launch
 
-- **Photo credits are unfilled.** Every profile hero currently displays "Photo credit pending — not cleared for publication". Fill the `credit` field per program in the source data, or replace the photos with licensed ones.
+- **Photo credits are unfilled.** Every profile hero displays "Photo credit pending — not cleared for publication". Fill the `credit` field per program in `programs.js`, or replace the photos with licensed ones.
 - **The newsletter form collects nothing.** It renders but has no provider behind it. Netlify Forms is the shortest path: add the `netlify` attribute to the `<form>` and submissions appear in the Netlify dashboard.
 - **Routing is hash-based** (`#/p/chris-hemsworth-thor-mass-block`), so profiles are not separately indexable. Given the traffic model is search, this is the biggest SEO gap.
 
 ## Content status
 
-35 programs listed. Five written out in full with a complete training week, macros, supplement stack, progression rules, and four-day / three-day / dumbbell-only adaptations:
+35 programs listed. Five written out in full — complete training week, macros, supplement stack, progression rules, and four-day / three-day / dumbbell-only adaptations:
 
 - Chris Hemsworth — Thor mass block
 - Hugh Jackman — Wolverine strength
