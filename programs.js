@@ -386,4 +386,17 @@ export const progression = {
 };
 
 // Photos for programs that don't have a full write-up yet.
-export const images = {};
+export const images = {
+  "Serena Williams — off-court strength": "p1787495359095-serena.webp"
+};
+
+// Written summaries for programs whose full week isn't published yet. These
+// describe what is publicly documented and say plainly what isn't.
+export const summaries = {
+  "Serena Williams — off-court strength": {
+    intro:
+      "The off-court work behind a twenty-year career, built around one idea: the gym exists to keep her on the court. Four sessions a week, full-body rather than split by muscle, weighted toward the things tennis punishes — single-leg strength, rotational power through the trunk, and shoulder work that is as much maintenance as it is training. Sled pushes and jump work carry the power end. Loads stay moderate; the aim was never a heavier squat, it was a first serve that still arrives in the third set, and a body that recovers between matches rather than between weeks.",
+    sources:
+      "Assembled from published interviews and training features across her career, plus accounts from her strength and conditioning staff. Session-by-session sets and reps have never been published, so we do not print a week for it — what you see above is the shape of the program, not an invented version of it. Documented, not endorsed."
+  }
+};

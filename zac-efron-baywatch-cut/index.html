@@ -22,7 +22,7 @@
 <script type="application/ld+json" id="ld-json">{"@context":"https://schema.org","@graph":[{"@type":"ExercisePlan","name":"Zac Efron — Baywatch cut","description":"A documented PPL split run 6 days a week at about 2,200 kcal a day.","url":"https://trainlikethem.netlify.app/zac-efron-baywatch-cut","exerciseType":"PPL","activityFrequency":"6 sessions per week","about":{"@type":"Person","name":"Zac Efron"},"citation":"Press interviews, 2017","isAccessibleForFree":true},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Splits","item":"https://trainlikethem.netlify.app/splits"},{"@type":"ListItem","position":2,"name":"Zac Efron — Baywatch cut","item":"https://trainlikethem.netlify.app/zac-efron-baywatch-cut"}]}]}</script>
 </head>
 <body>
-<div id="pre" style="background:#0d0d0c;color:#f2f2ef;font-family:Archivo,Helvetica,sans-serif;padding:24px 18px;max-width:1100px"><nav style="font-size:12px;color:#6b6b60;margin-bottom:22px"><a href="/" style="color:#8a8a80;margin-right:14px">Home</a><a href="/splits" style="color:#8a8a80;margin-right:14px">All splits</a><a href="/start" style="color:#8a8a80;margin-right:14px">Start here</a><a href="/diet" style="color:#8a8a80;margin-right:14px">Diet</a><a href="/fridge" style="color:#8a8a80;margin-right:14px">Fridge</a><a href="/gear" style="color:#8a8a80;margin-right:14px">Gear</a><a href="/glossary" style="color:#8a8a80;margin-right:14px">Glossary</a><a href="/about" style="color:#8a8a80;margin-right:14px">About</a><a href="/newsletter" style="color:#8a8a80;margin-right:14px">Newsletter</a></nav>
+<div id="pre" style="background:#0d0d0c;color:#f2f2ef;font-family:Archivo,Helvetica,sans-serif;padding:24px 18px;max-width:1100px"><nav style="font-size:12px;color:#6b6b60;margin-bottom:22px"><a href="/" style="color:#8a8a80;margin-right:14px">Home</a><a href="/start" style="color:#8a8a80;margin-right:14px">Start</a><a href="/splits" style="color:#8a8a80;margin-right:14px">Splits</a><a href="/diet" style="color:#8a8a80;margin-right:14px">Diet</a><a href="/fridge" style="color:#8a8a80;margin-right:14px">Fridge</a><a href="/gear" style="color:#8a8a80;margin-right:14px">Gear</a><a href="/about" style="color:#8a8a80;margin-right:14px">About</a><a href="/newsletter" style="color:#8a8a80;margin-right:14px">Newsletter</a><a href="/glossary" style="color:#8a8a80;margin-right:14px">Glossary</a></nav>
 <p style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#c8ff3d;margin:0 0 10px">Cutting</p>
 <h1 style="font-family:'Archivo Narrow',sans-serif;font-size:40px;line-height:1;text-transform:uppercase;margin:0 0 14px">Zac Efron — Baywatch cut</h1>
 <p style="font-size:17px;line-height:1.55;color:#a3a39a;max-width:60ch;margin:0 0 12px">We have this program summarised and sourced, but the full week is still being written out. PPL split, 6 days a week, about 2,200 kcal a day.</p>
@@ -49,16 +49,16 @@
 </helmet>
 <div style="background:#0d0d0c;color:#f2f2ef;font-family:Archivo,Helvetica,sans-serif;min-height:100vh;padding-bottom:{{ tabPad }}">
 
-  <header data-print="hide" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:14px {{ px }};border-bottom:1px solid #26261f;position:sticky;top:0;background:#0d0d0c;z-index:10">
+  <header data-print="hide" style="display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;padding:14px {{ px }};border-bottom:1px solid #26261f;position:sticky;top:0;background:#0d0d0c;z-index:10">
     <div onClick="{{ goHome }}" style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;letter-spacing:0.04em;cursor:pointer">Train<span style="color:#c8ff3d">Like</span>Them</div>
     <sc-if value="{{ deskNav }}" hint-placeholder-val="{{ true }}">
-    <nav style="display:flex;flex-wrap:wrap;gap:2px 4px;font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.1em">
+    <nav style="display:flex;flex:1 1 auto;flex-wrap:wrap;justify-content:flex-end;gap:2px 4px;font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.1em">
       <sc-for list="{{ nav }}" as="n" hint-placeholder-count="4">
-        <a href="{{ n.href }}" onClick="{{ n.go }}" style="padding:8px 14px;cursor:pointer;color:{{ n.color }};border-bottom:2px solid {{ n.rule }};text-decoration:none">{{ n.label }}</a>
+        <a href="{{ n.href }}" onClick="{{ n.go }}" style="padding:{{ n.pad }};cursor:pointer;color:{{ n.color }};border-bottom:2px solid {{ n.rule }};text-decoration:none;white-space:nowrap">{{ n.label }}</a>
       </sc-for>
     </nav>
     </sc-if>
-    <div onClick="{{ goJoin }}" style="background:#c8ff3d;color:#0d0d0c;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;padding:10px 14px;cursor:pointer">Weekly split</div>
+    <div onClick="{{ goJoin }}" style="flex:0 0 auto;margin-left:auto;background:#c8ff3d;color:#0d0d0c;font-family:'JetBrains Mono',monospace;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;padding:10px 14px;cursor:pointer;white-space:nowrap">Weekly split</div>
   </header>
   <sc-if value="{{ isMobile }}" hint-placeholder-val="{{ false }}">
   <div data-print="hide" style="position:fixed;bottom:0;left:0;right:0;z-index:20">
@@ -89,15 +89,9 @@
     <section style="padding:64px {{ px }} 52px;border-bottom:1px solid #26261f">
       <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;letter-spacing:0.16em;text-transform:uppercase;margin-bottom:20px">35 programs · documented, not guessed</div>
       <h1 style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:{{ h1Big }};line-height:0.88;text-transform:uppercase;letter-spacing:-0.02em;margin:0 0 28px;max-width:20ch">Steal their week. Run it yourself.</h1>
-      <div style="display:grid;grid-template-columns:{{ g1auto }};gap:48px;align-items:end;border-top:1px solid #26261f;padding-top:28px">
-        <p style="font-size:18px;line-height:1.5;color:#a3a39a;max-width:54ch;margin:0;text-wrap:pretty">Training splits, macros, and supplement stacks pulled from the people whose results you keep screenshotting. Written out in full — every set, every meal. No paywall.</p>
-        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
-        <span onClick="{{ goStart }}" style="background:#c8ff3d;color:#0d0d0c;font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;padding:14px 20px;cursor:pointer">Start here</span>
-        <form style="display:flex" onSubmit="{{ noop }}">
-          <input placeholder="EMAIL" style="width:240px;padding:14px 16px;border:1px solid #3a3a30;background:#161613;color:#f2f2ef;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em" />
-          <button style="padding:14px 22px;border:1px solid #3a3a30;background:transparent;color:#f2f2ef;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;cursor:pointer">Join</button>
-        </form>
-        </div>
+      <div style="display:grid;grid-template-columns:{{ g1auto }};gap:32px 48px;align-items:end;border-top:1px solid #26261f;padding-top:28px">
+        <p style="font-size:18px;line-height:1.5;color:#a3a39a;max-width:68ch;margin:0;text-wrap:pretty">Training splits, macros, and supplement stacks pulled from the people whose results you keep screenshotting. Written out in full — every set, every meal. No paywall.</p>
+        <span onClick="{{ goStart }}" style="justify-self:start;background:#c8ff3d;color:#0d0d0c;font-family:'JetBrains Mono',monospace;font-size:12px;text-transform:uppercase;letter-spacing:0.08em;padding:14px 20px;cursor:pointer;white-space:nowrap">Start here</span>
       </div>
     </section>
 
@@ -142,26 +136,12 @@
         </sc-for>
       </div>
     </section>
-
-    <section style="border-top:1px solid #26261f;padding:52px {{ px }}">
-      <h2 style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:28px;text-transform:uppercase;margin:0 0 8px">What's in every profile</h2>
-      <p style="font-size:16px;line-height:1.55;color:#a3a39a;max-width:58ch;margin:0 0 28px;text-wrap:pretty">No gated plans, no summaries that stop at the interesting part.</p>
-      <div style="display:grid;grid-template-columns:{{ g4 }};gap:2px;background:#26261f;border:1px solid #26261f">
-        <sc-for list="{{ contains }}" as="c" hint-placeholder-count="4">
-          <div style="background:#131311;padding:22px 24px">
-            <div style="font-family:'JetBrains Mono',monospace;font-size:10px;color:#c8ff3d;letter-spacing:0.14em;text-transform:uppercase;margin-bottom:12px">{{ c.k }}</div>
-            <h3 style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:20px;text-transform:uppercase;margin:0 0 10px;line-height:1.1">{{ c.h }}</h3>
-            <p style="font-size:14px;line-height:1.6;color:#a3a39a;margin:0;text-wrap:pretty">{{ c.b }}</p>
-          </div>
-        </sc-for>
-      </div>
-    </section>
   </div>
   </sc-if>
 
   <!-- FRIDGE -->
   <sc-if value="{{ isFridge }}" hint-placeholder-val="{{ false }}">
-  <div style="padding:48px {{ px }} 64px">
+  <div style="padding:48px {{ px }} 64px;max-width:1180px;margin:0 auto">
     <h1 style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:{{ h1Sm }};text-transform:uppercase;line-height:0.92;margin:0 0 12px">Fridge check</h1>
     <p style="font-size:17px;line-height:1.55;color:#a3a39a;max-width:60ch;margin:0 0 32px;text-wrap:pretty">Tick what you already have. You'll get the meals from these programs you can make tonight, without a shop.</p>
 
@@ -224,7 +204,7 @@
 
   <!-- START -->
   <sc-if value="{{ isStart }}" hint-placeholder-val="{{ false }}">
-  <div style="padding:48px {{ px }} 64px">
+  <div style="padding:48px {{ px }} 64px;max-width:1180px;margin:0 auto">
     <h1 style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:{{ h1Sm }};text-transform:uppercase;line-height:0.92;margin:0 0 12px">Start here</h1>
     <p style="font-size:17px;line-height:1.55;color:#a3a39a;max-width:58ch;margin:0 0 36px;text-wrap:pretty">Three questions, then three programs worth your next eight weeks. Nobody needs to read all thirty-five.</p>
 
@@ -285,7 +265,7 @@
 
   <!-- BROWSE -->
   <sc-if value="{{ isBrowse }}" hint-placeholder-val="{{ false }}">
-  <div style="padding:48px {{ px }} 64px">
+  <div style="padding:48px {{ px }} 64px;max-width:1180px;margin:0 auto">
     <h1 style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:{{ h1Sm }};text-transform:uppercase;line-height:0.92;margin:0 0 8px">All splits</h1>
     <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:baseline;margin:0 0 24px">
       <p style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#6b6b60;letter-spacing:0.08em;margin:0">{{ resultCount }} programs</p>
@@ -479,7 +459,7 @@
 
   <!-- DIET -->
   <sc-if value="{{ isDiet }}" hint-placeholder-val="{{ false }}">
-  <div style="padding:48px {{ px }} 64px">
+  <div style="padding:48px {{ px }} 64px;max-width:1180px;margin:0 auto">
     <h1 style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:{{ h1Sm }};text-transform:uppercase;line-height:0.92;margin:0 0 12px">Diet plans</h1>
     <p style="font-size:17px;line-height:1.55;color:#a3a39a;max-width:60ch;margin:0 0 18px;text-wrap:pretty">{{ dietNote }}</p>
     <span onClick="{{ goFridge }}" style="display:inline-block;font-family:'JetBrains Mono',monospace;font-size:11px;color:#c8ff3d;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;border-bottom:1px solid #c8ff3d;margin-bottom:34px">Fridge check — what can you make tonight? →</span>
@@ -516,7 +496,7 @@
 
   <!-- GLOSSARY -->
   <sc-if value="{{ isGlossary }}" hint-placeholder-val="{{ false }}">
-  <div style="padding:48px {{ px }} 64px">
+  <div style="padding:48px {{ px }} 64px;max-width:1180px;margin:0 auto">
     <h1 style="font-family:'Archivo Narrow',sans-serif;font-weight:700;font-size:{{ h1Sm }};text-transform:uppercase;line-height:0.92;margin:0 0 12px">Glossary</h1>
     <p style="font-size:17px;line-height:1.55;color:#a3a39a;max-width:62ch;margin:0 0 36px;text-wrap:pretty">Every term used in the program tables and the food plans, defined once and in plain language. If something on a profile page isn't here, it should be — tell us and it gets added.</p>
     <div style="display:flex;flex-direction:column;gap:44px">
@@ -709,14 +689,26 @@
   </div>
   </sc-if>
 
-  <footer data-print="hide" style="border-top:1px solid #26261f;padding:32px {{ px }};display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center;font-family:'JetBrains Mono',monospace;font-size:11px;color:#6b6b60;letter-spacing:0.06em">
-    <span>trainlikethem.com</span>
-    <div style="display:flex;gap:20px">
-      <span onClick="{{ goAbout }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em">How it works</span>
-      <span onClick="{{ goGlossary }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em">Glossary</span>
-      <span onClick="{{ goDisclosure }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em;color:#c8ff3d">Disclosure</span>
+  <footer data-print="hide" style="border-top:1px solid #26261f;padding:32px {{ px }};font-family:'JetBrains Mono',monospace;font-size:11px;color:#6b6b60;letter-spacing:0.06em">
+    <div style="display:flex;flex-wrap:wrap;gap:24px;justify-content:space-between;align-items:end">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <span style="text-transform:uppercase;letter-spacing:0.12em;color:#f2f2ef">One documented split a week</span>
+      <form style="display:flex" onSubmit="{{ noop }}">
+        <input placeholder="EMAIL" style="width:230px;padding:12px 14px;border:1px solid #3a3a30;background:#161613;color:#f2f2ef;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.08em" />
+        <button style="padding:12px 20px;border:1px solid #3a3a30;background:transparent;color:#f2f2ef;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:500;text-transform:uppercase;letter-spacing:0.08em;cursor:pointer" style-hover="background:#c8ff3d;color:#0d0d0c">Join</button>
+      </form>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start">
+      <div style="display:flex;flex-wrap:wrap;gap:20px">
+        <span onClick="{{ goAbout }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em">How it works</span>
+        <span onClick="{{ goJoin }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em">Newsletter</span>
+        <span onClick="{{ goGlossary }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em">Glossary</span>
+        <span onClick="{{ goDisclosure }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em;color:#c8ff3d">Disclosure</span>
+      </div>
+      <span>trainlikethem.com</span>
     </div>
     <span style="max-width:44ch">Programs are documented, not prescribed. Talk to a doctor before starting one.</span>
+    </div>
   </footer>
 </div>
 
@@ -818,7 +810,7 @@ class Component extends DCLogic {
     if (pre) pre.remove();
     if (this.state.programs.length) this.setState(this.readPath());
     import(new URL("./programs.js", document.baseURI).href).then((m) => {
-      this.setState({ programs: m.programs, programDetails: m.details, progression: m.progression, images: m.images || {} }, () => {
+      this.setState({ programs: m.programs, programDetails: m.details, progression: m.progression, images: m.images || {}, summaries: m.summaries || {} }, () => {
         const st = this.readPath();
         this.setState(st, () => {
           const target = this.pathFor(st.page, st.sel);
@@ -871,6 +863,7 @@ class Component extends DCLogic {
     const d = this.details()[row.title];
     const prog = (this.state.progression || {})[row.title] || [];
     const loose = (this.state.images || {})[row.title];
+    const sum = (this.state.summaries || {})[row.title] || {};
     if (d) return Object.assign({ hasWeek: true, pending: false, progression: prog, noImg: !(d.img || loose), img: d.img || loose, imgUrl: (d.img || loose) ? "url(" + (d.img || loose) + ")" : null, imgPos: d.imgPos || "60% 30%", photo: row.title.split(" — ")[0] + " training", alt: d.alt || (row.title.split(" — ")[0] + " training"), creditLine: d.credit ? "Photo: " + d.credit : "Photo credit pending — not cleared for publication" }, d);
     return {
       hasWeek: false,
@@ -881,8 +874,8 @@ class Component extends DCLogic {
       photo: row.title.split(" — ")[0],
       kicker: row.kicker,
       title: row.title,
-      intro: "We have this program summarised and sourced, but the full week is still being written out. It publishes in the newsletter first.",
-      sources: "Source: " + row.src + ". Documented, not endorsed — we have no affiliation with anyone profiled here.",
+      intro: sum.intro || "We have this program summarised and sourced, but the full week is still being written out. It publishes in the newsletter first.",
+      sources: sum.sources || ("Source: " + row.src + ". Documented, not endorsed — we have no affiliation with anyone profiled here."),
       stats: [
         { v: row.days, k: "days / week" },
         { v: row.cals, k: "kcal / day" },
@@ -1158,12 +1151,9 @@ class Component extends DCLogic {
     const navItems = [
       { label: "Start", page: "start" },
       { label: "Splits", page: "browse" },
-      { label: "People", page: "profile" },
       { label: "Diet", page: "diet" },
       { label: "Fridge", page: "fridge" },
-      { label: "Gear", page: "gear" },
-      { label: "About", page: "about" },
-      { label: "Newsletter", page: "join" }
+      { label: "Gear", page: "gear" }
     ];
     const m = this.state.w < 760;
     const GLOSSARY = this.glossaryTerms();
@@ -1390,12 +1380,13 @@ class Component extends DCLogic {
         { label: "Gear & supplements", page: "gear" },
         { label: "Glossary", page: "glossary" },
         { label: "How it works", page: "about" },
-        { label: "About", page: "about" },
         { label: "Newsletter", page: "join" },
         { label: "Disclosure", page: "disclosure" }
       ].map((t) => ({ label: t.label, go: () => { this.setState({ menuOpen: false }); this.go(t.page)(); } })),
       nav: navItems.map((n) => ({
         label: n.label,
+        // Tighter items in the 760–1000px band, where the full row barely fits.
+        pad: this.state.w < 1000 ? "8px 9px" : "8px 12px",
         go: this.go(n.page),
         href: this.pathFor(n.page),
         color: this.state.page === n.page ? "#c8ff3d" : "#f2f2ef",
@@ -1408,7 +1399,7 @@ class Component extends DCLogic {
         img: ((this.details() || {})[r.title] || {}).img || (this.state.images || {})[r.title],
         imgUrl: (((this.details() || {})[r.title] || {}).img || (this.state.images || {})[r.title]) ? "url(" + (((this.details() || {})[r.title] || {}).img || (this.state.images || {})[r.title]) + ")" : null,
         noImg: !(((this.details() || {})[r.title] || {}).img || (this.state.images || {})[r.title]),
-        imgPos: ((this.details() || {})[r.title] || {}).imgPos || "58% 28%",
+        imgPos: ((this.details() || {})[r.title] || {}).imgPos || "50% 40%",
         alt: ((this.details() || {})[r.title] || {}).alt || (r.title.split(" — ")[0] + " training"),
         href: this.pathFor("profile", all.indexOf(r)),
         open: this.openAt(all.indexOf(r))
