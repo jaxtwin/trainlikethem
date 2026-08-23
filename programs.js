@@ -129,8 +129,9 @@ export const details = {
     ]
   },
       "Chris Hemsworth — Thor mass block": {
-        img: "p1786957875632-0.webp",
-        alt: "Chris Hemsworth in a gym, shoulders and arms visible mid-set",
+        img: "p1787505000000-hemsworth.webp",
+        alt: "Chris Hemsworth outdoors mid-set on a cable resistance band, arms extended",
+        imgPos: "42% 28%",
         credit: "",
         kicker: "Push / pull / legs · role prep",
         title: "Chris Hemsworth — Thor mass block",
