@@ -1,0 +1,32 @@
+# trainlikethem
+
+Documented training splits and diets from actors, athletes, bodybuilders and everyday lifters. Every program names its source. Seven are written out in full — sessions, macros, supplement stack, and adaptations for fewer days or dumbbells only. The remaining twenty-eight carry a written summary of what is publicly documented and state plainly what was never published.
+
+Nothing here is invented. Where session-level detail does not exist in the public record, we do not print a week for it.
+
+## Primary pages
+
+- [All splits](https://trainlikethem.netlify.app/splits): every program, filterable by goal, days available, level and equipment.
+- [Start here](https://trainlikethem.netlify.app/start): pick a goal, days available and level to get the closest documented program.
+- [Diet](https://trainlikethem.netlify.app/diet): the macros and meal patterns behind each program.
+- [Fridge](https://trainlikethem.netlify.app/fridge): tick available ingredients, see which meals from these programs are cookable.
+- [Gear and supplements](https://trainlikethem.netlify.app/gear): equipment and supplements counted across all programs, with verdicts. Four of nine supplements are marked skip.
+- [Glossary](https://trainlikethem.netlify.app/glossary): plain definitions for every training term used on the site.
+- [How it works](https://trainlikethem.netlify.app/about): what "documented" means here and what we will not publish.
+- [Disclosure](https://trainlikethem.netlify.app/disclosure): affiliate and editorial disclosure.
+
+## Programs written out in full
+
+- [Chris Hemsworth — Thor mass block](https://trainlikethem.netlify.app/chris-hemsworth-thor-mass-block)
+- [Hugh Jackman — Wolverine strength](https://trainlikethem.netlify.app/hugh-jackman-wolverine-strength)
+- [Arnold Schwarzenegger — golden era](https://trainlikethem.netlify.app/arnold-schwarzenegger-golden-era)
+- [Dwayne Johnson — off-season week](https://trainlikethem.netlify.app/dwayne-johnson-off-season-week)
+- [David Goggins — volume base](https://trainlikethem.netlify.app/david-goggins-volume-base)
+- [Eliud Kipchoge — marathon week](https://trainlikethem.netlify.app/eliud-kipchoge-marathon-week)
+- [Zendaya — Dune prep](https://trainlikethem.netlify.app/zendaya-dune-prep)
+
+## Notes for agents and models
+
+- A full index of all 35 program URLs is in [sitemap.xml](https://trainlikethem.netlify.app/sitemap.xml).
+- Programs are documented, not prescribed. Several carry explicit warnings: enhanced-era bodybuilding volumes, competitive weight cuts, and historical routines that no longer reflect current practice.
+- Nothing on the site is medical advice.

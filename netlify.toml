@@ -2,8 +2,9 @@
   publish = "."
   command = ""
 
-# Prerendered pages are real files (/splits/index.html, /david-goggins-volume-base/index.html …);
-# the catch-all only covers paths added to programs.js before the next prerender run.
+# Every route is a real prerendered file (/splits/index.html, /david-goggins-volume-base/index.html …),
+# so there is no SPA catch-all: unknown paths get a real 404 instead of a 200 with the wrong content.
+# Adding a program to programs.js therefore requires re-running the prerender.
 
 [[headers]]
   for = "/index.html"
@@ -25,7 +26,7 @@
   [headers.values]
     Cache-Control = "public, max-age=300, must-revalidate"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[[headers]]
+  for = "/support.js"
+  [headers.values]
+    Cache-Control = "public, max-age=300, must-revalidate"
