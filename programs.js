@@ -393,6 +393,168 @@ export const images = {
 // Written summaries for programs whose full week isn't published yet. These
 // describe what is publicly documented and say plainly what isn't.
 export const summaries = {
+  "Ryan Reynolds — Deadpool block": {
+    intro:
+      "Eight years of the same role, trained as maintenance punctuated by ramps. The reported work is an upper/lower rotation five days a week with an emphasis on shoulder health and mobility alongside the lifting — his trainer has been consistent that the goal was a physique that could survive the stunt schedule. Later rounds reportedly leaned harder on conditioning, with calories moderate rather than high.",
+    sources:
+      "Assembled from interviews with his trainer across the Deadpool films. No complete published week or meal plan exists. Documented, not endorsed."
+  },
+  "Scarlett Johansson — Black Widow": {
+    intro:
+      "Athletic prep built for stunt work. Reported training is full-body strength five days a week alongside fight choreography and gymnastics-style bodyweight work, with the emphasis on being able to do the sequences rather than on how the result photographed. Calories moderate, and the shoot itself supplying a large part of the weekly load.",
+    sources:
+      "Assembled from interviews with her trainer and press coverage around the Marvel films. Session structure and diet were not published in full. Documented, not endorsed."
+  },
+  "Jason Statham — circuit weeks": {
+    intro:
+      "One of the few here with a genuinely published program. The reported structure is a rotating set of circuit-style sessions — varied deliberately so no week repeats — mixing lifting, rowing, and interval conditioning at a pace that keeps the heart rate high throughout. His trainer's account emphasises that boredom was treated as a training problem, and that the variety was the design rather than a lack of it.",
+    sources:
+      "Drawn from a program published with his trainer around 2010, plus interviews since. Enough was published that we intend to write this one out in full — the summary stands until we can verify the complete week. Documented, not endorsed."
+  },
+  "Ronnie Coleman — Mr. Olympia era": {
+    intro:
+      "Published, extreme, and chemically assisted, and all three facts matter. The routine is a high-volume bodybuilding split, six days a week, twice-daily in parts of the year, with very heavy loading on the basic movements and calories in the region of 5,500 a day across many meals. It is included because it is a documented part of the sport's record. It is not a program to run, and the enhanced context is not optional information.",
+    sources:
+      "Drawn from programs published during his competitive career, 2003 era. Documented, not endorsed — professional bodybuilding at this level involves pharmacology this site does not cover and does not recommend, and the training volume assumes it."
+  },
+  "Frank Zane — classic proportion": {
+    intro:
+      "A 1979 program from the era before mass became the sport's only currency, and the priorities show. The published work is a push/pull/legs rotation six days a week, moderate loads, high attention to symmetry and waist control, and a diet notably lower in calories than modern bodybuilding practice. Of the historical programs in this library, this is the one that reads closest to something a natural lifter could adapt.",
+    sources:
+      "Drawn from his published training material from the late 1970s. We intend to write this one out in full — the summary stands until the complete week is verified against the original. Documented, not endorsed."
+  },
+  "Katie Ledecky — dryland support": {
+    intro:
+      "Three dryland sessions a week, and the number is the point: the swimming is the program and the gym exists to serve it. Reported work is full-body strength, trunk and shoulder stability, and enough loading to support the water volume without adding fatigue to it. Calories run high against the swimming load rather than the lifting. For anyone whose main sport is not lifting, the ratio here is the useful lesson.",
+    sources:
+      "Assembled from press interviews and published coverage. Elite swimming programs are not released in session detail, and the pool work — the majority of the training — is not something we could print as a gym week. Documented, not endorsed."
+  },
+  "Novak Djokovic — movement week": {
+    intro:
+      "Movement quality treated as the primary training target. Reported components are mobility and flexibility work daily, tennis-specific movement drills, elastic and band work, and lifting kept light and speed-focused rather than heavy. Diet has been publicly discussed at length and is gluten-free and largely plant-based. The reported through-line across many years is longevity — training arranged so the career outlasts the peak rather than defining it.",
+    sources:
+      "Assembled from press interviews and his own published comments on training and diet. No session-level program has been released. Documented, not endorsed."
+  },
+  "Idris Elba — kickboxing camp": {
+    intro:
+      "Unusually well documented, because the year of training was filmed as a series. Reported work is kickboxing skill sessions, conditioning, and supporting strength work five days a week, built from an amateur starting point toward a single sanctioned fight. The value here is the arc — a beginner's year in a combat sport, recorded as it happened rather than reconstructed afterwards.",
+    sources:
+      "Assembled from the documented series and interviews around it, 2016. Session-by-session programming was not published, so no week is printed. Documented, not endorsed."
+  },
+  "Jessica Biel — long-term base": {
+    intro:
+      "Four sessions a week, sustained across years rather than run as a block, which makes this the most ordinary program in the library and possibly the most useful. Reported work is an upper/lower rotation with real loading — trap-bar deadlifts, weighted carries, single-leg work — under a trainer known for unglamorous programming. No prep deadline, no target weight, calories moderate. It documents what maintaining strength actually looks like when nothing is being filmed.",
+    sources:
+      "Assembled from her trainer's public posts and interviews, 2018 onward. Individual exercises are well documented but a complete week was never published as a program. Documented, not endorsed."
+  },
+  "Jason Momoa — Aquaman build": {
+    intro:
+      "The least gym-shaped program in the library. Rock climbing is reported as the backbone rather than an accessory, with lifting arranged around it and a lot of the conditioning happening outdoors. Calories ran high to support a big frame and a physical shoot. What it documents is that a recognisable build can come from something other than a structured split — and that the climbing carried the upper-body work most programs get from pulling exercises.",
+    sources:
+      "Assembled from press interviews around the Aquaman films. No structured program was ever published — by his own account much of it was not structured — so no week is printed. Documented, not endorsed."
+  },
+  "Tom Hardy — Warrior weight gain": {
+    intro:
+      "A deliberate weight gain of roughly two stone for a wrestling role, then a deliberate loss afterwards, both inside a year. The reported training is a conventional bodybuilding split five days a week, with the eating doing most of the work — high calories, frequent meals, and the gain accepted as partly fat rather than chased as lean mass. He has since spoken about the toll of repeated body recomposition for roles, which belongs in the record alongside the routine.",
+    sources:
+      "Assembled from press interviews around the film and his later comments on transformations. No published week or meal plan exists. Documented, not endorsed — rapid gain and loss cycles carry real costs."
+  },
+  "Chris Evans — Captain America": {
+    intro:
+      "A build block run across nearly a decade of films, which changed its character over time. The early reported work is heavy upper/lower training with high calories to add visible size for the first film; the later years read more as maintenance — holding the frame between productions rather than rebuilding it each time. His trainer has described the priority as symmetry and posture over raw mass, since the costume showed everything.",
+    sources:
+      "Assembled from interviews with his trainer across the Marvel films. Session detail and macros were not published as a complete program. Documented, not endorsed."
+  },
+  "Kumail Nanjiani — Eternals": {
+    intro:
+      "A year of training from an untrained starting point, which makes it the most replicable prep in this library and the one with the most honest public account. Reported work is a push/pull/legs split six days a week, calories tracked carefully, and a slow build rather than a crash. He has been openly critical of how the result was received and clear that he had resources — trainers, chefs, time — that make the outcome unrepresentative. That caveat is part of the documentation.",
+    sources:
+      "Assembled from his own posts and interviews with his trainer. No set-and-rep program was published, so no week is printed. Documented, not endorsed — read his own comments on the process."
+  },
+  "Mark Wahlberg — 4 am block": {
+    intro:
+      "Famous for the schedule rather than the training. The publicly posted daily routine starts before four, stacks two training sessions with recovery work, cryotherapy and meals at fixed times, and ends early. The lifting itself is a conventional push/pull/legs rotation; what is documented is an entire day arranged around it, which is only possible with a particular kind of job.",
+    sources:
+      "Assembled from his own posted daily schedules and interviews. The posts give timings rather than sets and reps, so no week is printed. Documented, not endorsed."
+  },
+  "Sylvester Stallone — Rocky IV era": {
+    intro:
+      "A historical record from 1985, and it should be read as one. His own accounts describe training twice a day, six days a week, very high volume, and a body-fat level low enough that he has since called it unsustainable and unwise. The training is a classic bodybuilding split; the calorie figure is low against the workload, which is the part that dates it. Included because it is documented, not because it is a model.",
+    sources:
+      "Assembled from his own published accounts of the period. Standards for both training and nutrition have moved substantially since. Documented, not endorsed — this one is a historical artifact."
+  },
+  "Simone Biles — conditioning week": {
+    intro:
+      "Gymnastics conditioning, which looks nothing like a gym program. Reported work is six days a week of skill practice with strength built into it — bodyweight strength at extreme ranges, trunk and shoulder work, and plyometric loading — rather than sessions separated into lifting and sport. Volume is very high and managed by coaching staff against competition and skill acquisition. The transferable part is the emphasis on strength at end range rather than strength under a bar.",
+    sources:
+      "Assembled from press interviews and published coverage of her training. Elite gymnastics programs are not released session by session, so no week is printed. Documented, not endorsed — the volumes here are not a starting point for anyone."
+  },
+  "Conor McGregor — fight camp": {
+    intro:
+      "A camp, which means a defined window with a weight target at the end of it. Reported components across camps are movement and mobility work, striking and sparring, conditioning in short high-intensity blocks, and lifting kept light and fast. The distinguishing feature is the weight cut in the final week — a competitive necessity documented repeatedly, and the single least advisable thing here for anyone not fighting.",
+    sources:
+      "Assembled from camp reporting and interviews across several fights. Camps are not published in session detail. Documented, not endorsed — do not attempt a competitive weight cut without medical supervision."
+  },
+  "Tia-Clair Toomey — CrossFit block": {
+    intro:
+      "The most genuinely published training in this library. Olympic lifting, gymnastics skill work, and conditioning run across two or three sessions a day, six days a week, with the mix shifting through the season toward competition. Strength numbers are a matter of public record rather than report. The volume is the point and also the barrier: this is a full-time athlete's week.",
+    sources:
+      "Drawn from published training content and competition records, 2021 onward. Full daily programming has appeared publicly in places, and we intend to write this one out properly — the summary stands until we can source a complete week rather than a representative one. Documented, not endorsed."
+  },
+  "Michael B. Jordan — Creed hybrid": {
+    intro:
+      "Boxing and bodybuilding running in the same week, which is why it reads as a hybrid rather than a split. The reported shape is two sessions on most days across a long prep — lifting to build the frame the role needed, boxing work and conditioning to keep it looking like a fighter's body rather than a gym body. Volume climbed as filming approached and calories were held moderate against the workload, so the visible result came from the gap between the two rather than from either alone. Sequels shifted the emphasis toward keeping the physique while the boxing work got sharper.",
+    sources:
+      "Assembled from interviews with his trainer and press coverage across the Creed films. Session structure, set-and-rep detail and the daily meal breakdown were never published, so we do not print a week for it. Documented, not endorsed."
+  },
+  "Brie Larson — Captain Marvel": {
+    intro:
+      "Strength training first, appearance second, which is unusual enough in role prep to be the defining fact about it. Four full-body sessions a week built on barbell work and progressive loading, with hip thrusts, pushing and pulling patterns, and sled work reported repeatedly. The documented milestones were performance ones — pushing a loaded vehicle, deadlifting well over bodyweight, unassisted pull-ups — rather than a target weight. Nine months of it, which is what made the loading progressive rather than a crash block.",
+    sources:
+      "Assembled from interviews with her trainer and press coverage around the film's release. Weekly session order, exact loads and the diet were never published in a form we could print, so no week is shown. Documented, not endorsed."
+  },
+  "Zac Efron — Baywatch cut": {
+    intro:
+      "A cut, not a build, and the reporting is consistent that the last few weeks were the hard part. A push/pull/legs split six days a week with the volume kept high, cardio added on top, and calories held low enough that the training became a means of holding muscle rather than adding it. He has since described the final phase — the point of the very visible result — as unpleasant and not something to repeat, which is a more useful piece of documentation than the routine itself.",
+    sources:
+      "Assembled from press interviews around the film and his own later comments on the process. No published session-by-session program exists, so we do not print one. Documented, not endorsed — and read his own retrospective before treating this as a target."
+  },
+  "Henry Cavill — Superman build": {
+    intro:
+      "A size block in the older sense: heavy compound work, an upper/lower rotation five days a week, and calories high enough to make the training productive. Deadlifts and squats anchor the reported programming, with the trainer's accounts emphasising progressive loading over variety. Later rounds of the role — and the Witcher work after it — reportedly added conditioning without dropping the strength base, so the same frame was maintained on less food than it was built on.",
+    sources:
+      "Assembled from his trainer's public posts and interviews across the Superman films and later roles. Set-and-rep schemes and macro splits were not published as a complete week, so none is printed here. Documented, not endorsed."
+  },
+  "Terry Crews — fasted mornings": {
+    intro:
+      "The distinguishing feature is the eating window, not the lifting. He has described training fasted in the morning and eating within a compressed window later in the day, held consistently for years rather than run as a block. The training itself is unglamorous — full-body sessions five days a week, moderate loads, treadmill work, done early. What makes it worth documenting is duration: this is a maintenance pattern that has survived decades, which is rarer than any single routine.",
+    sources:
+      "Assembled from his own interviews and public comments over several years. He has not published a set-and-rep program or a meal plan, so we do not print one. Documented, not endorsed — intermittent fasting suits some people and not others."
+  },
+  "Cristiano Ronaldo — in-season": {
+    intro:
+      "In-season work for a footballer, which means the gym is subordinate to the match schedule. Reported elements are consistent across years: sprint and plyometric work, core and trunk training, and lifting kept short and explosive rather than heavy and slow. Sleep is treated as part of the program rather than a nicety. The point is availability — the volume is arranged so nothing interferes with playing, which is the opposite of how a hypertrophy block is built.",
+    sources:
+      "Assembled from club reporting and published interviews. Clubs do not release session-level plans and none has been published, so the week is not printed here. Documented, not endorsed."
+  },
+  "LeBron James — in-season recovery": {
+    intro:
+      "The reported emphasis is recovery infrastructure rather than training load: sleep volume, soft-tissue work, pool sessions, and lifting arranged to support a long season across many years. Strength work is present but subordinate — enough to hold the frame through eighty-plus games, not enough to interfere with them. The widely reported spend on recovery is the honest headline here, and the part least transferable to anyone without a staff.",
+    sources:
+      "Assembled from interviews with his longtime trainer and press coverage. No session-level program has been published, so none is printed. Documented, not endorsed."
+  },
+  "Gal Gadot — Wonder Woman prep": {
+    intro:
+      "Athletic conditioning rather than a physique block. Reported work spans full-body strength five days a week, horse riding and sword work as part of the load, and a diet aimed at supporting long shoot days rather than cutting. The trainer's accounts stress building capability for the stunt work — the appearance followed from training that had a job to do.",
+    sources:
+      "Assembled from interviews with her trainer and press coverage around the films. Weekly structure and macros were never published in full, so no week is shown. Documented, not endorsed."
+  },
+  "Daniel Craig — Bond conditioning": {
+    intro:
+      "Fifteen years of the same brief, which makes the through-line the interesting part. The reported approach is an upper/lower rotation with heavy compounds, conditioning kept separate from lifting, and — increasingly across the later films — training arranged around injury history and age rather than against them. His trainer has been explicit that the goal was looking capable rather than large, and that the physique was a by-product of being fit enough to shoot the action.",
+    sources:
+      "Assembled from interviews with his trainer across the Bond films. No complete published week exists; set-and-rep detail and diet were not released. Documented, not endorsed."
+  },
   "Serena Williams — off-court strength": {
     intro:
       "The off-court work behind a twenty-year career, built around one idea: the gym exists to keep her on the court. Four sessions a week, full-body rather than split by muscle, weighted toward the things tennis punishes — single-leg strength, rotational power through the trunk, and shoulder work that is as much maintenance as it is training. Sled pushes and jump work carry the power end. Loads stay moderate; the aim was never a heavier squat, it was a first serve that still arrives in the third set, and a body that recovers between matches rather than between weeks.",
