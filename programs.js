@@ -173,8 +173,9 @@ export const details = {
         ]
       },
       "Hugh Jackman — Wolverine strength": {
-        img: "p1786957956628-0.webp",
-        alt: "Hugh Jackman in a training vest, upper body braced under load",
+        img: "p1787505300000-jackman.webp",
+        alt: "Hugh Jackman on a rowing machine in a daylit gym, mid-stroke",
+        imgPos: "52% 30%",
         credit: "",
         kicker: "Upper / lower · role prep",
         title: "Hugh Jackman — Wolverine strength",
@@ -216,8 +217,9 @@ export const details = {
         ]
       },
       "Arnold Schwarzenegger — golden era": {
-        img: "p1786958112867-0.webp",
-        alt: "Arnold Schwarzenegger posing in a 1970s gym, back and arms fully contracted",
+        img: "p1787505200000-arnold.webp",
+        alt: "Arnold Schwarzenegger pressing a loaded barbell on an incline bench outdoors, watched by a crowd",
+        imgPos: "55% 40%",
         credit: "",
         kicker: "Bro split · golden era",
         title: "Arnold Schwarzenegger — golden era",
