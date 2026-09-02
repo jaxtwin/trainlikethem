@@ -523,6 +523,10 @@ export const summaries = {
       "Assembled from press interviews around the film and his own later comments on the process. No published session-by-session program exists, so we do not print one. Documented, not endorsed — and read his own retrospective before treating this as a target."
   },
   "Henry Cavill — Superman build": {
+    img: "p1788358300000-cavill.webp",
+    alt: "Henry Cavill in a white sleeveless top outdoors, shaker bottle in hand after training",
+    imgPos: "50% 18%",
+    credit: "",
     intro:
       "A size block in the older sense: heavy compound work, an upper/lower rotation five days a week, and calories high enough to make the training productive. Deadlifts and squats anchor the reported programming, with the trainer's accounts emphasising progressive loading over variety. Later rounds of the role — and the Witcher work after it — reportedly added conditioning without dropping the strength base, so the same frame was maintained on less food than it was built on.",
     sources:
