@@ -1,14 +1,371 @@
 // Notes posts. Newest first. Body is inline-styled HTML; pages are generated
 // as standalone static files (no app runtime) by .gen/notes.js.
+// Reading time is DERIVED from the body — don't hand-write it.
 // Optional per post: quote (a condensation, never a sentence lifted verbatim
 // from the body), stat {v,k}, aside {label,text}, related [[href,label]].
+// Roundup posts add: items[] (pick/verdict/name/price/spec/body/pros/cons/href/cta),
+// howSelected[] and faq[]. Never name a product we have no data for.
 // The dek and the opening paragraph must not restate each other.
 export const posts = [
+  {
+    "slug": "adjustable-dumbbells-the-programs-actually-need",
+    "date": "2026-09-09",
+    "kicker": "Gear",
+    "title": "Adjustable dumbbells: which one the programs actually need",
+    "dek": "Most buying guides rank these on price and change speed. The more useful question is whether the pair goes heavy enough for the program you intend to run.",
+    "stat": {
+      "v": "36 kg",
+      "k": "top load the heavier programs need"
+    },
+    "aside": {
+      "label": "The filter",
+      "text": "Several of the documented programs work above 24 kg per hand. That single number eliminates the cheapest option in this category."
+    },
+    "quote": "Buy for the program you'll be running in a year, not the one you're starting.",
+    "builtFrom": "35 documented programs",
+    "related": [
+      [
+        "/gear",
+        "The full gear hub"
+      ],
+      [
+        "/splits",
+        "All 35 documented splits"
+      ]
+    ],
+    "body": "<p>Adjustable dumbbells are the single most useful purchase for running any of these programs at home, and the category is unusually easy to get wrong. Not because the products are bad, but because the specification that matters isn't the one the marketing leads on.</p>\n<p>Change speed is what gets advertised. Top load is what decides whether you outgrow the pair.</p>\n<h2>Why the ceiling matters more than the mechanism</h2>\n<p>Look at the documented programs that lean on dumbbell work and the loads climb past what an entry-level pair covers. A 24 kg ceiling is generous for a beginner and a hard wall inside a year of consistent pressing. Once you hit it, the pair stops being adjustable and becomes a fixed set you paid adjustable money for.</p>\n<p>Three seconds versus fifteen seconds of change time costs you a couple of minutes a session. A ceiling you've outgrown costs you the purchase.</p>",
+    "items": [
+      {
+        "pick": "Our pick",
+        "verdict": "Our pick",
+        "name": "Ironmaster Quick-Lock",
+        "price": "$700 pair",
+        "spec": [
+          [
+            "Range",
+            "2.3–34 kg each"
+          ],
+          [
+            "Change",
+            "~15 sec"
+          ],
+          [
+            "Mechanism",
+            "Threaded"
+          ]
+        ],
+        "body": "The slowest change of the five and the only one built like a piece of gym equipment rather than a consumer product. No dial, no plastic housing, nothing with a failure mode that ends the pair's life. If you intend to still be lifting in ten years, this is the one that will still be there.",
+        "pros": [
+          "Highest ceiling of the durable options",
+          "No mechanism to fail",
+          "Repairable and expandable"
+        ],
+        "cons": [
+          "Fifteen seconds per change is real friction",
+          "Worst option for drop sets",
+          "Highest upfront price"
+        ]
+      },
+      {
+        "pick": "Fast changes",
+        "verdict": "Fast changes",
+        "name": "NÜOBELL 80",
+        "price": "$750 pair",
+        "spec": [
+          [
+            "Range",
+            "2.3–36 kg each"
+          ],
+          [
+            "Change",
+            "~3 sec"
+          ],
+          [
+            "Mechanism",
+            "Dial"
+          ]
+        ],
+        "body": "The highest ceiling in the group and the fastest change, which makes it the best pair here for the higher-volume programs where you're moving through weights inside a set. The dial is also the failure point, and when it goes the dumbbell is finished.",
+        "pros": [
+          "36 kg per hand clears every program on the site",
+          "Three-second changes suit drop sets and supersets",
+          "Handle feels closest to a fixed dumbbell"
+        ],
+        "cons": [
+          "Dial mechanism is a single point of failure",
+          "Most expensive pair here",
+          "Long overall length at heavy settings"
+        ]
+      },
+      {
+        "pick": "Small spaces",
+        "verdict": "Small spaces",
+        "name": "PowerBlock Elite EXP",
+        "price": "$400 base",
+        "spec": [
+          [
+            "Range",
+            "2.3–23 kg, expandable"
+          ],
+          [
+            "Change",
+            "~5 sec"
+          ],
+          [
+            "Mechanism",
+            "Selector pin"
+          ]
+        ],
+        "body": "The most space-efficient design by a wide margin, and expandable later rather than replaced. The trade is the shape: a square cage around your hand is unpleasant for anything at shoulder height, which is a real problem given how much lateral raise and overhead work appears in the documented programs.",
+        "pros": [
+          "Smallest footprint in the category",
+          "Expandable in stages",
+          "Lowest entry price"
+        ],
+        "cons": [
+          "Square housing is awkward at the shoulder",
+          "Base set tops out at 23 kg",
+          "Expansion kits push total cost up"
+        ]
+      },
+      {
+        "verdict": "Middle ground",
+        "name": "REP Fitness QuickDial",
+        "price": "$650 pair",
+        "spec": [
+          [
+            "Range",
+            "2.3–36 kg each"
+          ],
+          [
+            "Change",
+            "~4 sec"
+          ],
+          [
+            "Mechanism",
+            "Dial"
+          ]
+        ],
+        "body": "Nothing wrong with it and nothing distinctive about it. Matches the NÜOBELL on range and nearly on change speed for slightly less money. If it's in stock and the others aren't, buy it without worrying.",
+        "pros": [
+          "Same 36 kg ceiling for less",
+          "Solid build",
+          "Good availability"
+        ],
+        "cons": [
+          "No standout quality",
+          "Dial carries the same failure risk",
+          "Less established track record"
+        ]
+      },
+      {
+        "verdict": "Skip",
+        "name": "Bowflex SelectTech 552",
+        "price": "$430 pair",
+        "count": "Not recommended for these programs",
+        "spec": [
+          [
+            "Range",
+            "2.3–24 kg each"
+          ],
+          [
+            "Change",
+            "~4 sec"
+          ],
+          [
+            "Mechanism",
+            "Dial"
+          ]
+        ],
+        "body": "The most recognisable pair in the category and the wrong buy for anyone running the programs documented here. The 24 kg ceiling is below what the heavier blocks ask for, and the plastic trays crack if you drop them — which you eventually will.",
+        "pros": [
+          "Cheapest fast-change option",
+          "Widely available",
+          "Fine for pure beginners"
+        ],
+        "cons": [
+          "24 kg ceiling is too low for the heavier programs",
+          "Plastic cracks when dropped",
+          "You will replace it"
+        ]
+      }
+    ],
+    "howSelected": [
+      "These five are the pairs named or implied across the equipment requirements of the 35 documented programs on this site, assessed against what those programs actually ask a dumbbell to do — top load first, then change speed, then durability.",
+      "We have not lab-tested them and we don't claim to have. The verdicts weigh published specifications against the load requirements in the programs, which is a narrower claim than a review site makes and one we can actually support. Where a pair fails on ceiling, we say skip regardless of how well it sells.",
+      "Prices are approximate and move constantly. Treat them as a rough tier, not a quote."
+    ],
+    "faq": [
+      {
+        "q": "Do I need dumbbells that go to 36 kg?",
+        "a": "Only if you intend to run the heavier documented blocks. If you're training three or four days a week for general strength, 24 kg per hand will occupy you for a long time. The ceiling matters most for pressing."
+      },
+      {
+        "q": "Are fast changes worth the premium?",
+        "a": "If your program uses drop sets or short-rest supersets, yes — fifteen seconds between weights breaks the intent of the set. For straight sets with two minutes of rest, it's a convenience, not a requirement."
+      },
+      {
+        "q": "One pair or a full rack?",
+        "a": "One adjustable pair covers every dumbbell movement in the documented programs. A rack is faster and takes a wall."
+      },
+      {
+        "q": "What else do these programs actually require?",
+        "a": "Less than you'd think. The equipment named across all 35 is counted on <a href=\"/gear\" style=\"color:#c8ff3d\">the gear page</a>, and most programs need a bar, a bench and somewhere to pull from."
+      }
+    ]
+  },
+  {
+    "slug": "the-only-two-supplements-worth-buying",
+    "date": "2026-09-05",
+    "kicker": "Gear",
+    "title": "The only two supplements worth buying",
+    "dek": "Nine appear across the documented stacks. Two have both frequency and evidence behind them, and between them they cost very little.",
+    "stat": {
+      "v": "2 of 9",
+      "k": "assessed supplements we'd buy"
+    },
+    "aside": {
+      "label": "No brands here",
+      "text": "We have counts from the documented programs, not product testing. So this names categories and what to look for, not brands."
+    },
+    "quote": "Two cheap, boring items and a diet that already works. That's the whole stack.",
+    "builtFrom": "7 documented supplement stacks",
+    "related": [
+      [
+        "/gear",
+        "All nine, assessed"
+      ],
+      [
+        "/notes/four-supplements-to-skip",
+        "The four to skip"
+      ]
+    ],
+    "body": "<p>Seven of the thirty-five programs here publish a supplement stack. Counted across those seven, two items appear in nearly all of them and also survive contact with the evidence.</p>\n<p>Everything else in the set is either situational or a historical artefact of when the program was written.</p>\n<h2>What to look for rather than what to buy</h2>\n<p>This is deliberately not a brand roundup. We have appearance counts from documented programs, not independent testing, so naming a winner would be inventing a verdict. What follows is the category and the specification that matters — take it to whichever brand is cheapest per serving with third-party testing.</p>",
+    "items": [
+      {
+        "pick": "Buy",
+        "verdict": "Buy",
+        "name": "Whey protein",
+        "price": "~$1 per 25 g serving",
+        "count": "In 6 of 7 documented stacks",
+        "spec": [
+          [
+            "Appears in",
+            "6 of 7 stacks"
+          ],
+          [
+            "Look for",
+            "Third-party tested"
+          ],
+          [
+            "Form",
+            "Concentrate or isolate"
+          ]
+        ],
+        "body": "The most common item in the entire documented set, and the only one whose purpose is straightforwardly nutritional: it's food in powder form, useful because hitting protein targets from whole food alone is inconvenient at the intakes these programs run. Concentrate is cheaper and fine unless lactose is a problem.",
+        "pros": [
+          "Solves a real problem — protein volume",
+          "Cheapest way to add 25 g of protein",
+          "No mechanism to be sceptical about"
+        ],
+        "cons": [
+          "Unnecessary if you already hit protein from food",
+          "Quality varies and testing is uneven",
+          "Flavouring and fillers differ wildly"
+        ]
+      },
+      {
+        "pick": "Buy",
+        "verdict": "Buy",
+        "name": "Creatine monohydrate",
+        "price": "~$0.10 per 5 g serving",
+        "count": "In 5 of 7 documented stacks",
+        "spec": [
+          [
+            "Appears in",
+            "5 of 7 stacks"
+          ],
+          [
+            "Dose",
+            "3–5 g daily"
+          ],
+          [
+            "Form",
+            "Monohydrate only"
+          ]
+        ],
+        "body": "The most studied supplement in sport and among the cheapest. Monohydrate is the form with the evidence behind it; the pricier variants exist to be different rather than better. Timing does not matter, consistency does.",
+        "pros": [
+          "Best evidence base of anything in the set",
+          "Costs pennies per day",
+          "Works without loading or cycling"
+        ],
+        "cons": [
+          "Effect is real but modest",
+          "Some water retention early on",
+          "Nothing happens quickly"
+        ]
+      },
+      {
+        "verdict": "Situational",
+        "name": "Electrolytes, magnesium, vitamin D3",
+        "price": "Varies",
+        "count": "In 2–4 of 35 programs each",
+        "spec": [
+          [
+            "Test",
+            "Only for a specific reason"
+          ],
+          [
+            "D3",
+            "Bloodwork, not guesswork"
+          ],
+          [
+            "Electrolytes",
+            "Heat and long sessions"
+          ]
+        ],
+        "body": "These three appear rarely and for identifiable reasons — heat, cramping, sleep, latitude. Worth testing on yourself if one of those applies to you. Not worth taking by default, and not worth taking all three because a program you admire listed one.",
+        "pros": [
+          "Cheap to trial",
+          "Clear use cases exist",
+          "Low downside"
+        ],
+        "cons": [
+          "Easy to take pointlessly",
+          "D3 needs testing to dose sensibly",
+          "No effect if you weren't deficient"
+        ]
+      }
+    ],
+    "howSelected": [
+      "Every supplement named across the 35 documented programs is counted on the gear page, with a verdict against each. This post takes the nine assessed items and reports the two that have both frequency in the documented set and an evidence base outside it.",
+      "Frequency alone is explicitly not the criterion, and the multivitamin is why: it appears in 12 of 35 programs, more than creatine, and we still say skip. Popularity in this sample measures what supplement stacks looked like when they were written.",
+      "We have not tested products and name no brands. Prices are per-serving estimates to show the order of magnitude."
+    ],
+    "faq": [
+      {
+        "q": "Which creatine should I buy?",
+        "a": "Any monohydrate with third-party testing. The form is the only thing that matters and it's the cheapest form."
+      },
+      {
+        "q": "Do I need whey if I eat enough protein?",
+        "a": "No. It solves convenience, not deficiency. If you're hitting your target from food, you're done."
+      },
+      {
+        "q": "What about the multivitamin in so many programs?",
+        "a": "It's the second most common item in the set and we still say skip — the reasoning is in <a href=\"/notes/four-supplements-to-skip\" style=\"color:#c8ff3d\">the note on the four to skip</a>."
+      },
+      {
+        "q": "Is any of this medical advice?",
+        "a": "No. None of this is medical or dietary advice. Talk to a doctor before starting a supplement, particularly if you take medication."
+      }
+    ]
+  },
   {
     "slug": "nobody-stays-in-thor-shape",
     "date": "2026-09-02",
     "kicker": "Editorial",
-    "read": "6 min",
     "title": "Nobody stays in Thor shape",
     "dek": "Twenty-two of the thirty-five programs here were built for a release date. The bodies they produced were never meant to last, and almost nobody publishes what came after.",
     "stat": {
@@ -27,7 +384,6 @@ export const posts = [
     "slug": "three-days-a-week",
     "date": "2026-08-26",
     "kicker": "From the data",
-    "read": "6 min",
     "title": "Three days a week: the honest version",
     "dek": "Exactly one of the thirty-five programs runs three days. Here's what happens to the other thirty-four when you cut them down to fit a real week.",
     "stat": {
@@ -46,7 +402,6 @@ export const posts = [
     "slug": "the-five-exercises-that-keep-showing-up",
     "date": "2026-08-19",
     "kicker": "From the data",
-    "read": "5 min",
     "title": "The five exercises that keep showing up",
     "dek": "Seven programs on this site are written out session by session. Count what's in them and the overlap isn't the lifts you'd expect.",
     "stat": {
@@ -65,7 +420,6 @@ export const posts = [
     "slug": "what-5000-calories-looks-like",
     "date": "2026-08-12",
     "kicker": "Diet",
-    "read": "5 min",
     "title": "What 5,000 calories a day actually looks like",
     "dek": "It's the highest documented figure on the site. Written out as food rather than as a number, it stops sounding like an achievement.",
     "stat": {
@@ -81,29 +435,27 @@ export const posts = [
     "body": "<p>Five thousand calories is the number people screenshot. It sounds like abundance — eat whatever you want, twice. Written out meal by meal, it reads more like a shift rota.</p>\n<p>This is the off-season week documented on the site, laid out as it was published:</p>\n<div style=\"display:grid;gap:1px;background:#26261f;border:1px solid #26261f;margin:30px 0\"><div style=\"background:#0d0d0c;display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:12px 14px\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:11px;color:#8f8f86;letter-spacing:0.04em\">4:45 am</span><span style=\"font-size:15px;color:#c9c9c1\">Cod, oatmeal, egg whites (after cardio)</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d\">780</span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:12px 14px\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:11px;color:#8f8f86;letter-spacing:0.04em\">8:00 am</span><span style=\"font-size:15px;color:#c9c9c1\">Chicken, rice, broccoli</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d\">820</span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:12px 14px\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:11px;color:#8f8f86;letter-spacing:0.04em\">11:00 am</span><span style=\"font-size:15px;color:#c9c9c1\">Steak, sweet potato, greens</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d\">900</span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:12px 14px\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:11px;color:#8f8f86;letter-spacing:0.04em\">2:00 pm</span><span style=\"font-size:15px;color:#c9c9c1\">Chicken, rice, asparagus</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d\">820</span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:12px 14px\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:11px;color:#8f8f86;letter-spacing:0.04em\">5:00 pm</span><span style=\"font-size:15px;color:#c9c9c1\">Fish, rice, vegetables</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d\">780</span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:110px 1fr auto;gap:16px;align-items:baseline;padding:12px 14px\"><span style=\"font-family:'JetBrains Mono',monospace;font-size:11px;color:#8f8f86;letter-spacing:0.04em\">8:30 pm</span><span style=\"font-size:15px;color:#c9c9c1\">Casein, egg whites, greens</span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d\">560</span></div></div>\n<h2>Six meals, and the first one is before five</h2>\n<p>The arithmetic is the least interesting part. What the layout tells you is that eating 5,000 calories of largely unprocessed food means eating roughly every three hours from before dawn until bedtime, and preparing all of it in advance.</p>\n<p>Nobody hits this figure improvising. It requires a kitchen, a schedule with no unpredictable days in it, and somebody — often not the person eating — doing the cooking.</p>\n<h2>Why it's this high</h2>\n<p>A calorie figure is a function of three things: how much the person weighs, how much they train, and what they're trying to do. This is a large man training six days a week with the explicit intention of adding mass. Change any one of those inputs and the number stops applying.</p>\n<p>Which is why lifting it out of context is the most reliable way to gain fat. At a lighter bodyweight and four training days, the same intake isn't a mass phase. It's just a large surplus with someone else's name attached to it.</p>\n<h2>The version that transfers</h2>\n<p>The structure is worth copying even when the number isn't. Protein at every meal, most of the carbohydrate placed around training, vegetables in nearly every plate, and one slow-digesting protein last thing. That pattern holds at 2,400 calories as well as at 5,000.</p>\n<p>The calorie band is the useful unit, not the celebrity. <a href=\"/diet\">The diet page</a> is organised that way for exactly this reason, and <a href=\"/fridge\">the fridge tool</a> will tell you which of these meals you can cook from what you already own.</p>\n<p>None of this is medical or dietary advice. Programs here are documented, not prescribed.</p>"
   },
   {
-    "slug": "twenty-three-trainers-one-repeat",
+    "slug": "eighteen-trainers-one-repeat",
     "date": "2026-08-05",
     "kicker": "From the data",
-    "read": "5 min",
-    "title": "Twenty-three trainers, and only one appears twice",
-    "dek": "There's no cartel of celebrity coaches behind these bodies. The credits are almost entirely different people, which tells you something about what the programs have in common.",
+    "title": "Eighteen trainers, and only one appears twice",
+    "dek": "There's no cartel of celebrity coaches behind these bodies. Nineteen of the thirty-five programs name an individual, and almost every name is different.",
     "stat": {
-      "v": "1",
-      "k": "trainer credited on more than one program"
+      "v": "18",
+      "k": "named trainers across 35 programs"
     },
     "aside": {
       "label": "The exception",
-      "text": "Simon Waterson appears on two of the thirty-five. Everybody else appears once."
+      "text": "Simon Waterson is credited on two programs. The other seventeen appear once each."
     },
-    "quote": "Twenty-three coaches arriving independently at five or six days a week is worth more than any one of them saying it.",
+    "quote": "Eighteen coaches arriving independently at five or six days a week is worth more than any one of them saying it.",
     "builtFrom": "35 documented programs",
-    "body": "<p>It's tempting to assume a small circle of trainers is responsible for most on-screen transformations, and that hiring one is the actual secret. The credits don't support it.</p>\n<p>Across the thirty-five programs here, twenty-three different named trainers appear. Exactly one of them — Simon Waterson — is credited on two. Every other name appears once. Five programs are self-programmed, three are published routines with no coach attached, and the rest are credited to team or camp staff rather than an individual.</p>\n<div style=\"display:grid;gap:1px;background:#26261f;border:1px solid #26261f;margin:30px 0\"><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Named individual trainers</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:110px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">23</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Self-programmed</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:24px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">5</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Team, club or camp staff</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:33px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">7</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Published program, no coach</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:14px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">3</span></span></div></div>\n<h2>What that rules out</h2>\n<p>If one methodology were doing the work, you'd expect to see it concentrated. Instead you get near-total dispersion: two dozen coaches, different countries, different decades, different sports.</p>\n<p>So whatever these programs share, it isn't a school of thought or a proprietary system. It's the constraints they were all working under.</p>\n<h2>What they converge on anyway</h2>\n<p>And they do converge. Twenty-nine of the thirty-five land on five or six training days a week. Most anchor sessions on a small number of heavy compounds and fill the rest with isolation work. Almost all of them place the majority of carbohydrate around training.</p>\n<p>Independent agreement is the strongest kind. When twenty-three people who have never worked together arrive at broadly the same weekly structure, that structure is a response to something real — how bodies recover, how long a shooting schedule is, how much volume a person can absorb before performance drops.</p>\n<h2>The other reading</h2>\n<p>There's a less flattering interpretation and it deserves airtime. These are the programs that got published, and what gets published is what a publicist approved. The convergence might partly reflect what reads well in a magazine feature rather than what happened in the gym.</p>\n<p>We can't settle that from the sources, so we won't pretend to. What we can say is that the pattern is in the documented record, and that the record is what this site is.</p>\n<p>Every program's credit line is on <a href=\"/splits\">the splits page</a>, and the sourcing standard is set out in <a href=\"/notes/why-only-seven-are-written-out\">the note on why only seven are written out in full</a>.</p>"
+    "body": "<p>It's tempting to assume a small circle of trainers is responsible for most on-screen transformations, and that hiring one is the actual secret. The credits don't support it.</p>\n<p>Across the thirty-five programs here, eighteen different named trainers appear, covering nineteen programs. Exactly one of them — Simon Waterson — is credited on two. The other seventeen appear once each. The remaining sixteen programs name no individual at all: six are self-programmed, three are published routines with no coach attached, and the rest are credited to team, club or camp staff.</p>\n<div style=\"display:grid;gap:1px;background:#26261f;border:1px solid #26261f;margin:30px 0\"><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Named individual trainers</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:110px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">18</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Self-programmed</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:37px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">6</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Team, club or camp staff</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:43px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">7</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Published program, no coach</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:18px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">3</span></span></div></div>\n<h2>What that rules out</h2>\n<p>If one methodology were doing the work, you'd expect to see it concentrated. Instead you get near-total dispersion: eighteen coaches, different countries, different decades, different sports.</p>\n<p>So whatever these programs share, it isn't a school of thought or a proprietary system. It's the constraints they were all working under.</p>\n<h2>What they converge on anyway</h2>\n<p>And they do converge. Twenty-nine of the thirty-five land on five or six training days a week. Most anchor sessions on a small number of heavy compounds and fill the rest with isolation work. Almost all of them place the majority of carbohydrate around training.</p>\n<p>Independent agreement is the strongest kind. When eighteen people who have never worked together arrive at broadly the same weekly structure, that structure is a response to something real — how bodies recover, how long a shooting schedule is, how much volume a person can absorb before performance drops.</p>\n<h2>The other reading</h2>\n<p>There's a less flattering interpretation and it deserves airtime. These are the programs that got published, and what gets published is what a publicist approved. The convergence might partly reflect what reads well in a magazine feature rather than what happened in the gym.</p>\n<p>We can't settle that from the sources, so we won't pretend to. What we can say is that the pattern is in the documented record, and that the record is what this site is.</p>\n<p>Every program's credit line is on <a href=\"/splits\">the splits page</a>, and the sourcing standard is set out in <a href=\"/notes/why-only-seven-are-written-out\">the note on why only seven are written out in full</a>.</p>"
   },
   {
     "slug": "nobody-prints-the-deload",
     "date": "2026-07-29",
     "kicker": "Editorial",
-    "read": "5 min",
     "title": "Nobody prints the deload",
     "dek": "Every serious program has weeks where the load comes down on purpose. Almost none of the published versions mention them, and the omission changes how the program reads.",
     "stat": {
@@ -122,7 +474,6 @@ export const posts = [
     "slug": "what-they-all-eat-for-breakfast",
     "date": "2026-07-22",
     "kicker": "Diet",
-    "read": "5 min",
     "title": "What they all eat for breakfast",
     "dek": "Strip the names off the seven documented first meals and six of them are the same three components. The interesting part is what varies and what doesn't.",
     "stat": {
@@ -141,7 +492,6 @@ export const posts = [
     "slug": "four-supplements-to-skip",
     "date": "2026-07-15",
     "kicker": "Gear",
-    "read": "5 min",
     "title": "Four supplements these programs name that you can skip",
     "dek": "Twelve of the thirty-five programs list a multivitamin. That's a measure of what was popular when they were written, not of what works.",
     "stat": {
@@ -160,7 +510,6 @@ export const posts = [
     "slug": "the-two-thousand-calorie-cut",
     "date": "2026-07-08",
     "kicker": "Diet",
-    "read": "5 min",
     "title": "The 2,000-calorie cut nobody talks about",
     "dek": "The low end of the documented range gets far less attention than the high end, and it's the harder half to run safely.",
     "stat": {
@@ -181,7 +530,6 @@ export const posts = [
     "kicker": "From the data",
     "title": "What split do they actually run?",
     "dek": "Everyone has an opinion about splits. Hardly anyone counts. So we counted all thirty-five.",
-    "read": "5 min",
     "body": "<p>Split arguments get settled by preference, usually loudly. This one is settled by counting: every documented program on the site, sorted by what it actually runs rather than by what anybody recommends.</p>\n<div style=\"display:grid;gap:1px;background:#26261f;border:1px solid #26261f;margin:30px 0\"><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Hybrid — lifting plus a sport or conditioning focus</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:110px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">11</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Full body</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:80px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">8</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Upper / lower</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:60px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">6</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Push / pull / legs</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:50px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">5</span></span></div><div style=\"background:#0d0d0c;display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 14px\"><span style=\"font-size:15px;color:#c9c9c1\">Bro split — one body part a day</span><span style=\"display:flex;align-items:center;gap:10px\"><span style=\"display:block;height:8px;background:#c8ff3d;width:50px\"></span><span style=\"font-family:'JetBrains Mono',monospace;font-size:12px;color:#c8ff3d;min-width:16px;text-align:right\">5</span></span></div></div>\n<h2>Hybrid wins because the job isn't bodybuilding</h2>\n<p>Eleven of thirty-five is the biggest group by a clear margin, and the sample explains most of it. Twenty-two of these people are actors, ten are athletes, three are bodybuilders. An actor has to look a particular way on a particular date and still work a twelve-hour shooting day. An athlete lifts around a fixture list. Neither job is served by a split built purely for size.</p>\n<p>The five bro splits are almost all the bodybuilders and the pure size blocks. The eight full-body programs lean toward the athletes and the conditioning weeks, where frequency matters more than how much you pile into one session.</p>\n<h2>The number nobody mentions</h2>\n<p>Twenty-nine of the thirty-five train five or six days a week. Fifteen at six, fourteen at five. Five train four days. One trains three, and that one is the outlier everybody quietly assumes they are.</p>\n<p>You can copy a split off a page in about a minute. You cannot copy six mornings a week around a job, a commute and a family — and these programs assume you have them, along with a trainer, a stocked kitchen and a schedule arranged around recovery.</p>\n<h2>So what do you do with it</h2>\n<p>If you train three or four days, the honest match is upper/lower or full body. Fourteen of these programs are one or the other, and they're the ones that survive being scaled down. A six-day bro split run at half its frequency isn't that program any more. It's usually a worse one.</p>\n<p><a href=\"/start\">The recommender</a> filters on exactly this — days you have, equipment you can reach, and what you're actually after.</p>",
     "quote": "The split is the easy part to copy. The frequency is not.",
     "builtFrom": "35 documented programs",
@@ -200,7 +548,6 @@ export const posts = [
     "kicker": "Diet",
     "title": "The calorie number is not the program",
     "dek": "The documented figures run from 2,000 to 5,500 a day. Copying the number without what surrounds it is the most common way these programs fail.",
-    "read": "4 min",
     "body": "<p>Both ends of that range are real, sourced figures. The median sits at 3,000, which should already tell you the headline numbers are the exception rather than the pattern. And none of the three is a recommendation.</p>\n<h2>Why the big numbers are big</h2>\n<p>A 4,500 or 5,000 calorie figure almost always arrives with three things attached: a large body, five or six training sessions a week, and a deadline. Role-prep mass blocks are short. They run for weeks, supervised, with every intention of ending.</p>\n<p>Lift the number out of that and it stops describing a program. It just describes a surplus.</p>\n<h2>Why the small numbers are small</h2>\n<p>Same story at the other end. A 2,000 calorie cut alongside six training days is deliberate, temporary and monitored — usually pointed at a shooting date or a weigh-in. It isn't a way to live, and the people running it weren't living that way either, before or after.</p>\n<h2>What actually transfers</h2>\n<p>The structure does. Protein anchored to your bodyweight, most of the carbohydrate placed around training, calories set against a goal and adjusted from what actually happens week to week.</p>\n<p>The absolute number doesn't. It was worked out for someone else's mass, someone else's training load, someone else's deadline. That's why <a href=\"/diet\">the diet page</a> is organised by calorie band rather than by person — the band is the useful unit, the name attached to it isn't.</p>\n<h2>The practical version</h2>\n<p>Start from your own bodyweight and how often you train. Use the documented figures as a sense of the range these bodies operate in. Then adjust from what the scale and the gym tell you over two or three weeks. It's slower than copying a number, and it's the only version that works.</p>\n<p>None of this is medical or dietary advice. Programs here are documented, not prescribed.</p>",
     "quote": "The structure transfers. The absolute number does not.",
     "builtFrom": "35 documented programs",
@@ -219,7 +566,6 @@ export const posts = [
     "kicker": "Editorial",
     "title": "Why only seven of the thirty-five are written out in full",
     "dek": "The other twenty-eight get a summary and a source line. That gap is the whole editorial position, so it's worth saying plainly what causes it.",
-    "read": "4 min",
     "body": "<p>Every program here started as somebody else's public claim — a press interview, a trainer's own post, a magazine feature, a documentary. Seven of them were published in enough detail that you can actually run the week: sets, reps, rest, and the food that went alongside. Twenty-eight weren't.</p>\n<h2>What counts as documented</h2>\n<p>A program gets written out in full when three things exist in public. A session-by-session structure. Some statement of load or progression. And a calorie or macro figure that came from the person or their trainer, not from a journalist's estimate.</p>\n<p>Most celebrity training coverage misses at least two of those. A feature says \"five days a week, heavy compounds, 4,000 calories\" and stops there. That's a summary, so we publish it as a summary.</p>\n<h2>What we won't do</h2>\n<p>The commercial temptation is obvious. A page called \"Henry Cavill's exact Superman workout\" with an invented seven-day table will beat a page that admits the table was never published. We'd rather lose that traffic.</p>\n<p>Because the moment one week gets filled in with plausible guesses, nothing on the site is worth trusting — including the seven weeks that are real. So the summary pages say what was reported, name where it was reported, and state what's missing.</p>\n<h2>The count should move</h2>\n<p>Seven isn't a target. It's just where the sourcing stands. If a trainer publishes the block, or an interview goes into real detail, the page gets upgraded and we note the change.</p>\n<p>One more thing, plainly: nobody here is affiliated with this site and nothing on it is endorsed by them. It's documentation of public claims, not a partnership.</p>",
     "quote": "One fabricated week and none of the thirty-five can be trusted.",
     "builtFrom": "35 documented programs",
