@@ -788,6 +788,7 @@
       <div style="display:flex;flex-wrap:wrap;gap:20px">
         <span onClick="{{ goAbout }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em">How it works</span>
         <span onClick="{{ goJoin }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em">Newsletter</span>
+        <a href="/notes" style="text-transform:uppercase;letter-spacing:0.1em;color:inherit;text-decoration:none">Notes</a>
         <span onClick="{{ goGlossary }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em">Glossary</span>
         <span onClick="{{ goDisclosure }}" style="cursor:pointer;text-transform:uppercase;letter-spacing:0.1em;color:#c8ff3d">Disclosure</span>
       </div>
@@ -1480,11 +1481,16 @@ class Component extends DCLogic {
       moreItems: [
         { label: "Start here", page: "start" },
         { label: "Gear & supplements", page: "gear" },
+        { label: "Notes", page: "@/notes" },
         { label: "Glossary", page: "glossary" },
         { label: "How it works", page: "about" },
         { label: "Newsletter", page: "join" },
         { label: "Disclosure", page: "disclosure" }
-      ].map((t) => ({ label: t.label, go: () => { this.setState({ menuOpen: false }); this.go(t.page)(); } })),
+      ].map((t) => ({ label: t.label, go: () => {
+        // "@/path" items are real pages outside the app, not SPA routes.
+        if (t.page.charAt(0) === "@") { window.location.href = t.page.slice(1); return; }
+        this.setState({ menuOpen: false }); this.go(t.page)();
+      } })),
       nav: navItems.map((n) => ({
         label: n.label,
         // Tighter items in the 760–1000px band, where the full row barely fits.
